@@ -77,7 +77,7 @@ def is_transaction_successful(processed_payment, drink_price):
         return False
 
 
-# TODO: 7. Make coffe reducing the resources after order processes
+# TODO: 7. Make coffe reducing the resources after order processes.
 def make_coffee(order_ingredients, drink_name):
     for item in order_ingredients:
         resources[item] -= order_ingredients[item]
