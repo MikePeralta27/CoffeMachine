@@ -50,7 +50,7 @@ def is_resources_sufficient(ingredients_drink):
     return True
 
 
-#TODO: 5. Process the inserted coins and return the total amount
+# TODO: 5. Process the inserted coins and return the total amount
 def process_coins():
     """Rertun the total amonunt of the proccesed coins"""
     print("Please insert coins.")
@@ -62,7 +62,7 @@ def process_coins():
     return total
 
 
-#TODO: 6. process the payment and validate if the transaccion is sucessful
+# TODO: 6. process the payment and validate if the transaccion is sucessful
 def is_transaction_successful(processed_payment, drink_price):
     """Takes the inserted payment amount and the price of the desired drink and compare if the transaction is
     successful or not"""
@@ -77,7 +77,7 @@ def is_transaction_successful(processed_payment, drink_price):
         return False
 
 
-#TODO: 7. Make coffe reducing the resources after order processes
+# TODO: 7. Make coffe reducing the resources after order processes
 def make_coffee(order_ingredients, drink_name):
     for item in order_ingredients:
         resources[item] -= order_ingredients[item]
@@ -99,4 +99,3 @@ while is_on:
             payment = process_coins()
             if is_transaction_successful(payment, drink["cost"]):
                 make_coffee(drink["ingredients"], user_choice)
-
